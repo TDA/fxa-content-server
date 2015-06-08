@@ -5,13 +5,23 @@
 
 module.exports = function (grunt) {
   grunt.config('jscs', {
-    src: [
-      '{,<%= yeoman.app %>/**/,tests/**/,grunttasks/**/,server/**/,scripts/**/}*.js',
-      '!<%= yeoman.app %>/bower_components/**',
-      '!<%= yeoman.app %>/scripts/vendor/**'
-    ],
-    options: {
-      config: '.jscsrc'
+    server: {
+      src: '{,tests/**/,grunttasks/**/,server/**/,scripts/**/}*.js',
+      options: {
+        config: '.jscsrc'
+      }
+    },
+    app: {
+      src: [
+        '{,<%= yeoman.app %>/**/,tests/**/,grunttasks/**/,server/**/,scripts/**/}*.js',
+        '!<%= yeoman.app %>/bower_components/**',
+        '!<%= yeoman.app %>/scripts/vendor/**'
+      ],
+      options: {
+        config: '.jscsrc',
+        requirePaddingNewLinesAfterUseStrict: true
+      }
     }
   });
 };
+
