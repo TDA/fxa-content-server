@@ -1,6 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+'use strict';
 
 // grunt task to create .json files out of .po files.
 // .po files are expected to already be downloaded.
@@ -9,8 +10,6 @@ const path = require('path');
 const i18n = require('i18n-abide');
 
 module.exports = function (grunt) {
-  'use strict';
-
   grunt.config('po2json', {
     options: {
       format: 'raw',
