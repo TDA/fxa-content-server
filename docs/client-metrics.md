@@ -212,6 +212,12 @@ The event stream is a log of events and the time they occurred while the user is
 * error.signup.auth.1016 - user did not enter their birthday
 * error.signup.auth.1029 - signup is disabled on Fx for iOS v1
 * error.signup.auth.1030 - signup has been force disabled by a Sync based relier.
+* error.signup.auth.1031 - password contains all numbers or letters.
+* error.signup.auth.1032 - bloomfilter search has been triggered.
+* error.signup.auth.1033 - password was found in bloomfilter.
+* error.signup.auth.1034 - password was not found in bloomfilter.
+* error.signup.auth.1035 - password is not a string.
+
 
 #### signup_permissions
 * signup-permissions.accept - user accepts and grants the requested permissions
