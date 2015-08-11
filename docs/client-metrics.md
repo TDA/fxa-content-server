@@ -197,7 +197,7 @@ The event stream is a log of events and the time they occurred while the user is
 #### signup
 * tooltip.mailcheck-suggested - an email address correction was suggested
 * tooltip.mailcheck-used - an email address correction was chosen by the user
-* tooltip.mailcheck-dismissed - an email address correction tooltip was dismissed without the selection being made.
+* tooltip.mailcheck-dismissed - an email address correction tooltip was dismissed without the selection being made
 * signup.checkbox.change.show-password.checked - password is shown
 * signup.checkbox.change.show-password.unchecked - password is hidden
 * signup.password.visible - password is shown
@@ -206,18 +206,17 @@ The event stream is a log of events and the time they occurred while the user is
 * signup.email-optin.visible.false - email opt-in is not visible
 * signup.checkbox.change.marketing-email-optin.checked - user checked the email opt-in
 * signup.checkbox.change.marketing-email-optin.unchecked - user unchecked the email opt-in
-* signup.checkbox.change.customize-sync.checked - user checked the "Choose what to sync" checkbox.
-* signup.checkbox.change.customize-sync.unchecked - user unchecked the "Choose what to sync" checkbox.
+* signup.checkbox.change.customize-sync.checked - user checked the "Choose what to sync" checkbox
+* signup.checkbox.change.customize-sync.unchecked - user unchecked the "Choose what to sync" checkbox
 * error.signup.auth.1012 - user did not enter year of birth
 * error.signup.auth.1016 - user did not enter their birthday
 * error.signup.auth.1029 - signup is disabled on Fx for iOS v1
-* error.signup.auth.1030 - signup has been force disabled by a Sync based relier.
-* error.signup.auth.1031 - password contains all numbers or letters.
-* error.signup.auth.1032 - bloomfilter search has been triggered.
-* error.signup.auth.1033 - password was found in bloomfilter.
-* error.signup.auth.1034 - password was not found in bloomfilter.
-* error.signup.auth.1035 - password is not a string.
-
+* error.signup.auth.1030 - signup has been force disabled by a Sync based relier
+* experiment.pw-strength.ALL_NUMBERS_LETTERS - password contains all numbers or letters
+* experiment.pw-strength.BLOOMFILTER_HIT - password was found in bloomfilter
+* experiment.pw-strength.BLOOMFILTER_MISS - password was not found in bloomfilter
+* experiment.pw-strength.PASSWORD_TOO_SHORT - password was less than 8 characters
+* experiment.pw-strength.MISSING_PASSWORD - no password supplied
 
 #### signup_permissions
 * signup-permissions.accept - user accepts and grants the requested permissions
